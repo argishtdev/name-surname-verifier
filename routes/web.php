@@ -17,4 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('if-name-exists', [\App\Http\Controllers\Name\NameController::class , 'index']);
+Route::get('if-name-exists', [\App\Http\Controllers\Information\InformationController::class , 'names']);
+Route::get('is-last-name', [\App\Http\Controllers\Information\InformationController::class , 'lastName']);
+Route::get('is-gender', [\App\Http\Controllers\Information\InformationController::class , 'gender']);
